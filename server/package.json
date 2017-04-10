@@ -1,0 +1,15 @@
+{
+  "name": "api_proxy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Blazej Owczarczyk",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "readline-sync": "^1.4.7"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}

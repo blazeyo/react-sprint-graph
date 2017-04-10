@@ -27,6 +27,8 @@ const demoDeployDone = {
 
 const data = [baseCurve, storyPoints, demoDeployDone];
 
+fetch('http://localhost:3001/rest/agile/1.0/board').then(response => console.log(response));
+
 ReactDOM.render(
   <div className="wrapper">
     <h1 className="title">React - DBB</h1>
