@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Plot from './Plot';
+import { getSprints } from './jira';
 
 const baseCurve = {
   x: ["1","2","3","4","5","6","7","8","9","10","11","12","13","14"],
@@ -16,8 +17,7 @@ const storyPoints = {
   name: 'Story Points'
 }
 
-const demoDeployDone = {	
-  
+const demoDeployDone = {
   // Days of sprint
   x: ["1","2","3","4","5","6","7","8","9","10","11"],
   // Story Points
@@ -27,7 +27,7 @@ const demoDeployDone = {
 
 const data = [baseCurve, storyPoints, demoDeployDone];
 
-fetch('http://localhost:3001/rest/agile/1.0/board').then(response => console.log(response));
+getSprints(240, { state: 'active' }).then(sprints => console.log(sprints))
 
 ReactDOM.render(
   <div className="wrapper">

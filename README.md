@@ -20,3 +20,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ```
 
 (see [LICENSE.md](LICENSE.md) for the full license text)
+
+## Starting
+
+To start in dev mode first run the server (`cd server && npm start` followed by your jira credentials) and then the
+fontend with `npm start` from the main dir.
